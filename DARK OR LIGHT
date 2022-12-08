@@ -1,0 +1,12 @@
+from datetime import datetime
+
+
+def get_part_of_day(hour):
+    return (
+        "light" if 5 <= hour <= 18
+        else
+        "dark" )
+
+
+h = datetime.now().hour
+print(f"its{get_part_of_day(h)}right now.")
